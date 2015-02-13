@@ -4,7 +4,7 @@ import os
 import glob
 import time
 from time import sleep
-import RPi GPIO as GPIO
+import RPi.GPIO as GPIO
 import picamera
 import atexit
 import sys
@@ -12,14 +12,6 @@ import smtplib
 import socket
 import pygame
 from signal import alarm, signal, SIGALRM, SIGKILL
-
-
-
-
-
-import RPi.GPIO as GPIO
-import time
-import os
 import subprocess
 
 

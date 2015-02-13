@@ -38,17 +38,17 @@ replay_cycles = 4
 #GPIO Setup
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(led1_pin,GPIO.OUT) # LED 1
-GPIO.setup(led2_pin,GPIO.OUT) # LED 2
-GPIO.setup(led3_pin,GPIO.OUT) # LED 3
-GPIO.setup(led4_pin,GPIO.OUT) # LED 4
-GPIO.setup(button1_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 1
-GPIO.setup(button2_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 2
-GPIO.setup(button3_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 3
-GPIO.output(led1_pin,False);
-GPIO.output(led2_pin,False);
-GPIO.output(led3_pin,False);
-GPIO.output(led4_pin,False);
+GPIO.setup(led1,GPIO.OUT) # LED 1
+GPIO.setup(led2,GPIO.OUT) # LED 2
+GPIO.setup(led3,GPIO.OUT) # LED 3
+GPIO.setup(led4,GPIO.OUT) # LED 4
+GPIO.setup(button1, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 1
+GPIO.setup(button2, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 2
+GPIO.setup(button3, GPIO.IN, pull_up_down=GPIO.PUD_UP) # falling edge detection on button 3
+GPIO.output(led1,False);
+GPIO.output(led2,False);
+GPIO.output(led3,False);
+GPIO.output(led4,False);
 
 
 #Functions

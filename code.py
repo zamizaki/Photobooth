@@ -76,15 +76,15 @@ def start_photobooth():
     print "Taking Picture..."
     now = time.strftime("%Y%m%d%H%M%S")
     try: #take the photos
-	for i, filename in enumerate(camera.capture_continuous(file_path + now + '-' + '{counter:02d}.jpg')):
-    	    #GPIO.output(led2_pin,True) #turn on the LED
-    	    print(filename)
+        for i, filename in enumerate(camera.capture_continuous(file_path + now + '-' + '{counter:02d}.jpg')):
+            #GPIO.output(led2_pin,True) #turn on the LED
+            print(filename)
                 #sleep(0.25) #pause the LED on for just a bit
                 #GPIO.output(led2_pin,False) #turn off the LED
-                #sleep(capture_delay) # pause in-between shots
-		if i == total_pics-1:
-                    break
+            sleep(capture_delay) # pause in-between shots
+            if i == total_pics-1:
+                break
     finally:
         camera.stop_preview()
-	camera.close()
-	exit_photobooth()
+        camera.close()
+        exit_photobooth()
